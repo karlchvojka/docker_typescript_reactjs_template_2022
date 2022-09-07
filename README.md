@@ -49,3 +49,6 @@ docker-compose up -d --build
 
 ## Build/start Prod environment.
 docker-compose -f docker-compose.prod.yml up -d --build
+
+## Stop Docker containers
+docker-compose down
