@@ -11,7 +11,7 @@ module.exports = {
    * Configured entry for the index.js file.
    */
   entry: {
-    main: path.resolve(__dirname, './index.js'),
+    main: path.resolve(__dirname, './index.tsx'),
   },
 
   /**
@@ -55,7 +55,7 @@ module.exports = {
       templates: path.resolve(__dirname, './src/components/templates'),
     },
 
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
   },
   module: {
 
@@ -64,7 +64,7 @@ module.exports = {
      */
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
